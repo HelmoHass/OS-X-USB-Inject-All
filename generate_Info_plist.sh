@@ -91,6 +91,9 @@ mergeModelData "iMac18,1"
 mergeModelData "iMac18,2"
 mergeModelData "iMac18,3"
 mergeModelData "iMac19,1"
+mergeModelData "iMac19,2"
+mergeModelData "iMac20,1"
+mergeModelData "iMac20,2"
 
 # iMacPro
 mergeModelData "iMacPro1,1"
@@ -114,6 +117,7 @@ mergeModelData "MacPro3,1" EHCI
 mergeModelData "MacPro4,1" EHCI
 mergeModelData "MacPro5,1" EHCI
 mergeModelData "MacPro6,1" EHCI
+mergeModelData "MacPro7,1"
 
 # check to see if it was updated...
 cksum_old=`md5 -q $plist`
