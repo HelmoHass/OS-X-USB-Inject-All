@@ -123,18 +123,14 @@ http://www.tonymacx86.com/el-capitan-laptop-support/173616-guide-10-11-usb-chang
 
 ### Downloads:
 
-Downloads are available on Bitbucket:
-
-https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/
-
-
 The best way to download the config_patches.plist and other repo files is to download the project ZIP:
 
-https://github.com/RehabMan/OS-X-USB-Inject-All/archive/master.zip
+or 
+git clone https://github.com/HelmoHass/OS-X-USB-Inject-All
 
 
 ### How to Install
-
+# OLD Systems
 Install the kext with your favorite kext installer, such as Kext Wizard.
 
 Or install via Terminal:
@@ -142,6 +138,20 @@ Or install via Terminal:
 sudo cp -R Release/USBInjectAll.kext /Library/Extensions
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
+# Modern Systems
+Install the kext with your Bootloader in use, such as Clover or Open Core.
+#
+Clover
+```
+EFI/Clover/kexts/Other
+```
+#
+Open Core
+```
+EFI/OC/Kexts
+```
+Make sure to also add USBInjectAll.kext entry into config.plist /Kernel/Add/ like other kexts accordingly.
+#
 
 Note: This kext assumes you already renamed EHC1->EH01 and EHC2->EH02.  It also assumes your XHCI controller is named XHC or XHCI (not renamed to XHC1).  These names EH01/EH02/XHC are best to avoid conflicts with built-in port injectors for Apple computers.  Refer to config_patches.plist in this repo for the patches required (config_patches.plist/ACPI/DSDT/Patches).
 
