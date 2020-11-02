@@ -131,6 +131,7 @@ git clone https://github.com/HelmoHass/OS-X-USB-Inject-All
 
 ### How to Install
 # OLD Systems
+Prior 10.13.x
 Install the kext with your favorite kext installer, such as Kext Wizard.
 
 Or install via Terminal:
