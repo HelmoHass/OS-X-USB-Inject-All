@@ -140,14 +140,14 @@ sudo cp -R Release/USBInjectAll.kext /Library/Extensions
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 # Modern Systems
-Install the kext with your Bootloader in use, such as Clover or Open Core.
+Install the kext into Boot Partition,
 #
 Clover
 ```
 EFI/Clover/kexts/Other
 ```
 #
-Open Core
+OpenCore
 ```
 EFI/OC/Kexts
 ```
