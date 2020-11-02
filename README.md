@@ -144,7 +144,7 @@ Install the kext into Boot Partition,
 #
 Clover
 ```
-EFI/Clover/kexts/Other
+EFI/Clover/kexts/Other (eventually Since BigSur this will change to another Directory.)
 ```
 #
 OpenCore
